@@ -1,0 +1,48 @@
+body{
+    background: rgb(0, 0, 0);
+}
+
+#products{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.productsCard{
+    width: 200px;
+    border: 2px solid skyblue;
+    background: rgba(123, 122, 122, 0.61);
+    border-radius: 15px;
+}
+img{
+    width: 90%;
+    margin: 0px 10px;
+}
+.title{
+    margin: 15px 0px;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}
+.price{
+    margin: 15px 0px;
+    color: rgb(160, 222, 150);
+    font-size: 20px;
+}
+.size{
+    color: white;
+    font-size: 20px;
+}
+.btn{
+    cursor: pointer;
+    margin: 20px 15px;
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background: rgb(151, 208, 246);
+    font-size: 13px;
+}
