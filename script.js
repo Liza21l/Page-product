@@ -29,7 +29,7 @@ const renderProducts = () => {
     .forEach((btnEl)=> {
         btnEl.addEventListener("click", () => {
             const productId = btnEl.getAttribute("product-id")
-            window.location.href = `http://127.0.0.1:5502/product.html#${productId}`
+            window.location.href = `http://127.0.0.1:5500/product.html#${productId}`
         })
     })
 }
