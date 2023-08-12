@@ -4,7 +4,8 @@ const formEl = {
     price: document.querySelector('#formPrice'),
     size: document.querySelector('#formSize'),
     moreInfo: document.querySelector('#formMoreInfo'),
-    btnCreate: document.querySelector('#formBtn')
+    btnCreate: document.querySelector('#formBtn'),
+    select: document.querySelector('#formSelect')
 }
 
 const productsEl = document.querySelector('#products')
@@ -52,8 +53,10 @@ formEl.btnCreate.addEventListener('click', () => {
         imgUrl: formEl.imgUrl.value,
         price: formEl.price.value,
         size: formEl.size.value,
-        moreInfo: formEl.moreInfo.value
+        moreInfo: formEl.moreInfo.value,
+        category: formEl.select.value
     }
+    console.log(formData)
     axios.post('http://localhost:4000/products/create',{...formData})
         .then(res=> {
             console.log(res.data)

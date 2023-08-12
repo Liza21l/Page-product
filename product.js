@@ -8,7 +8,12 @@ const renderProduct = () => {
         <img src="${productInfo.imgUrl}">
         <p>${productInfo.name}</p>
         <p>${productInfo.price} грн</p>
+        <button product-id="${productInfo.id}" class="btnReviews">Написати відгук</button>
     `
+    const btnEl = document.querySelector('.btnReviews')
+    btnEl.addEventListener('click', () => {
+        window.location.href = `http://127.0.0.1:5500/Reviews.html#${productId}`
+    })
 }
 
 const getProduct = () => {
